@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: normal;
+    background-color: #003F88;
+    font-family: 'Fredoka', sans-serif;
+    color: white;
+}
+
+#container {
+    display: flex;
+    height: 100vh;
+}
+
+#video-output {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #003F88;
+}
+
+#video-output h1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #ffffff;
+}
+
+#letter-container {
+    width: 1500px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #ffd500;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 50px;
+}
+
+#letter-image {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: auto;
+    height: 100%;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+}
+
+#letter-image img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+#error-message {
+    color: red;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+#letter-input {
+    padding: 10px;
+    font-size: 18px;
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#enter-button {
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #ffd500;
+    color: #003F88;
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#enter-button:hover {
+    background-color: #ffffff;
+}
+
+#clear-button {
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #ff4d4d;
+    color: white;
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#clear-button:hover {
+    background-color: #ffffff;
+    color: #ff4d4d;
+}
+
+.back-button {
+    position: fixed;
+    top: 30px;
+    left: 40px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    background-color: #003F88;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.circle img {
+    width: 40px;
+    height: 40px;
+    filter: invert(100%);
+}
+
+.back-button:hover .circle {
+    background-color: #ffd500;
+}
+
+.back {
+    color: white;
+    font-size: 1.5em;
+    text-shadow: 3px 3px 3px #000000;
+}
+
+@media (max-width: 768px) {
+    #letter-container {
+        width: 400px;
+        height: 400px;
+    }
+
+    #letter-input {
+        width: 280px;
+    }
+
+    #enter-button,
+    #clear-button {
+        font-size: 18px;
+        padding: 10px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    #letter-container {
+        width: 300px;
+        height: 300px;
+    }
+
+    #letter-input {
+        width: 250px;
+        font-size: 16px;
+    }
+
+    #enter-button,
+    #clear-button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
