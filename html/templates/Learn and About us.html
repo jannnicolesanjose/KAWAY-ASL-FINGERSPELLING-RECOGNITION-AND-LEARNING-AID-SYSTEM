@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAWAY: An American Sign Language (ASL) Recognition and Learning Aid System</title>
+
+    <!-- Link to CSS stored in the static folder -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='cssLAU/style.css') }}">
+    
+    <!-- Link to icon stored in the static folder -->
+    <link rel="icon" href="{{ url_for('static', filename='logoimages/icon.png') }}" type="image/png">
+</head>
+
+<body>
+    <div class="back-button" onclick="history.back()">
+        <div class="circle">
+            <!-- Image source updated to be served from the static folder -->
+            <img src="{{ url_for('static', filename='logoimages/backbutton.png') }}" alt="Back Arrow">
+            <b class="back">Back</b>
+        </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="title-container">
+            <h1>KAWAY: An American Sign Language (ASL) Recognition and Learning Aid System</h1>
+        </div>
+
+        <div class="container">
+            <!-- Each section is now pointing to its Flask route -->
+            <div class="section learn-section">
+                <b class="mabuhay">Mabuhay!</b>
+                <!-- Image source updated to be served from the static folder -->
+                <img class="icon" id="learnBtn" alt="Learn" src="{{ url_for('static', filename='logoimages/Learn.png') }}">
+                <a class="learn-btn" href="{{ url_for('learn') }}">Learn</a>
+            </div>
+            <div class="section learn-section">
+                <b class="mabuhay">Mabuhay!</b>
+                <!-- Image source updated to be served from the static folder -->
+                <img class="icon" id="learnBtn" alt="Learn" src="{{ url_for('static', filename='logoimages/TexttoASL.png') }}">
+                <a class="learn-btn" href="{{ url_for('practice') }}">Practice</a>
+            </div>
+            <div class="section translate-section">
+                <b class="mabuhay">Mabuhay!</b>
+                <!-- Image source updated to be served from the static folder -->
+                <img class="icon" id="translateBtn" alt="Translate" src="{{ url_for('static', filename='logoimages/translate.png') }}">
+                <a class="translate-btn" href="{{ url_for('translate') }}">Translate</a>
+            </div>
+            <div class="section about-section">
+                <b class="mabuhay">Mabuhay!</b>
+                <!-- Image source updated to be served from the static folder -->
+                <img class="icon" id="aboutUsBtn" alt="About Us" src="{{ url_for('static', filename='logoimages/About Us.png') }}">
+                <a class="about-btn" href="{{ url_for('about_us') }}">About Us</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to JavaScript stored in the static folder -->
+    <script src="{{ url_for('static', filename='cssLAU/script.js') }}"></script>
+
+</body>
+</html>
