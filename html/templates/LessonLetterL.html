@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAWAY: An American Sign Language (ASL) Recognition and Learning Aid System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='cssModules/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='logoimages/icon.png') }}" type="image/png">
+</head>
+<body>
+    <div class="back-button" onclick="history.back()">
+        <div class="circle">
+            <img src="{{ url_for('static', filename='logoimages/backbutton.png') }}" alt="Back Arrow">
+        </div>
+        <b class="back">Back</b>
+    </div>
+    
+    <div class="title-container">
+        <h2 class="lesson">Lesson: Letter L</h2>
+    </div>
+
+    <div class="gif-container">
+        <img src="{{ url_for('static', filename='ASLgif/GuideL.gif') }}" alt="GIF of Letter L">
+    </div>
+
+    <div class="letter-img">
+        <img src="{{ url_for('static', filename='handsigns/L1.jpeg') }}" alt="Hand Sign L1">
+        <img src="{{ url_for('static', filename='handsigns/L2.jpeg') }}" alt="Hand Sign L2">
+        <img src="{{ url_for('static', filename='handsigns/L3.jpeg') }}" alt="Hand Sign L3">
+        <img src="{{ url_for('static', filename='handsigns/L4.jpeg') }}" alt="Hand Sign L4">
+        <img src="{{ url_for('static', filename='handsigns/L5.jpeg') }}" alt="Hand Sign L5">
+    </div>
+
+    <div class="handsign-guide">
+        <div class="description" id="guide">
+            <h3>Directions for Signing the Letter L</h3>
+            <p>Hold your dominant hand in a fist, palm facing outward, 
+                with the thumb and index fingers standing upright at a 90-degree angle 
+                to each other, to resemble the letter "L," while the other fingers are curled in.</p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='cssModules/script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAWAY: An American Sign Language (ASL) Recognition and Learning Aid System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='cssLearn/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='logoimages/icon.png') }}" type="image/png">
+</head>
+<body>
+    <div class="back-button" onclick="history.back()">
+        <div class="circle">
+            <img src="{{ url_for('static', filename='logoimages/backbutton.png') }}" alt="Back Arrow">
+        </div>
+        <b class="back">Back</b>
+    </div>
+    
+    <div class="main-container">
+        <div class="title-container">
+            <h1>American Sign Language Lesson</h1>
+        </div>
+    
+        <div class="folders-container">
+            <div class="folder">
+                <img src="{{ url_for('static', filename='Letters/A.png') }}" alt="A">
+                <a class="open-btn" href="{{ url_for('a') }}">Open</a>
+            </div>
+            <div class="folder">
+                <img src="{{ url_for('static', filename='Letters/B.png') }}" alt="B">
+                <a class="open-btn" href="{{ url_for('b') }}">Open</a>
+            </div>
+            <div class="folder">
+                <img src="{{ url_for('static', filename='Letters/C.png') }}" alt="C">
+                <a class="open-btn" href="{{ url_for('c') }}">Open</a>
+            </div>
+            <div class="folder">
+                <img src="{{ url_for('static', filename='Letters/D.png') }}" alt="D">
+                <a class="open-btn" href="{{ url_for('d') }}">Open</a>
+            </div>
+            <div class="folder">
+                <img src="{{ url_for('static', filename='Letters/E.png') }}" alt="E">
+                <a class="open-btn" href="{{ url_for('e') }}">Open</a>
+            </div>
+            <div class="folder">
+                <img src="{{ url_for('static', filename='Letters/F.png') }}" alt="F">
+                <a class="open-btn" href="{{ url_for('f') }}">Open</a>
+            </div>
+            <div class="folder">
+                <img src="{{ url_for('static', filename='Letters/G.png') }}" alt="G">
+                <a class="open-btn" href="{{ url_for('g') }}">Open</a>
+            </div>
+            <div class="folder">
+                <img src="{{ url_for('static', filename='Letters/H.png') }}" alt="H">
+                <a class="open-btn" href="{{ url_for('h') }}">Open</a>
+            </div>
+            <div class="folder">
+                <img src="{{ url_for('static', filename='Letters/I.png') }}" alt="I">
+                <a class="open-btn" href="{{ url_for('i') }}">Open</a>
+            </div>
+            <div class="folder">
+                <img src="{{ url_for('static', filename='Letters/J.png') }}" alt="J">
+                <a class="open-btn" href="{{ url_for('j') }}">Open</a>
+            </div>
+            <div class="folder">
+                <img src="{{ url_for('static', filename='Letters/K.png') }}" alt="K">
+                <a class="open-btn" href="{{ url_for('k') }}">Open</a>
+            </div>
+            <div class="folder">
+                <img src="{{ url_for('static', filename='Letters/L.png') }}" alt="L">
+                <a class="open-btn" href="{{ url_for('l') }}">Open</a>
+            </div>
+            <div class="folder">
+                <img src="{{ url_for('static', filename='Letters/M.png') }}" alt="M">
+                <a class="open-btn" href="{{ url_for('m') }}">Open</a>
+            </div>
+            <div class="folder">
+                <img src="{{ url_for('static', filename='Letters/N.png') }}" alt="N">
+                <a class="open-btn" href="{{ url_for('n') }}">Open</a>
+            </div>
+            <div class="folder">
+                <img src="{{ url_for('static', filename='Letters/O.png') }}" alt="O">
+                <a class="open-btn" href="{{ url_for('o') }}">Open</a>
+            </div>
+            <div class="folder">
+                <img src="{{ url_for('static', filename='Letters/P.png') }}" alt="P">
+                <a class="open-btn" href="{{ url_for('p') }}">Open</a>
+            </div>
+            <div class="folder">
+                <img src="{{ url_for('static', filename='Letters/Q.png') }}" alt="Q">
+                <a class="open-btn" href="{{ url_for('q') }}">Open</a>
+            </div>
+            <div class="folder">
+                <img src="{{ url_for('static', filename='Letters/R.png') }}" alt="R">
+                <a class="open-btn" href="{{ url_for('r') }}">Open</a>
+            </div>
+            <div class="folder">
+                <img src="{{ url_for('static', filename='Letters/S.png') }}" alt="S">
+                <a class="open-btn" href="{{ url_for('s') }}">Open</a>
+            </div>
+            <div class="folder">
+                <img src="{{ url_for('static', filename='Letters/T.png') }}" alt="T">
+                <a class="open-btn" href="{{ url_for('t') }}">Open</a>
+            </div>
+            <div class="folder">
+                <img src="{{ url_for('static', filename='Letters/U.png') }}" alt="U">
+                <a class="open-btn" href="{{ url_for('u') }}">Open</a>
+            </div>
+            <div class="folder">
+                <img src="{{ url_for('static', filename='Letters/V.png') }}" alt="V">
+                <a class="open-btn" href="{{ url_for('v') }}">Open</a>
+            </div>
+            <div class="folder">
+                <img src="{{ url_for('static', filename='Letters/W.png') }}" alt="W">
+                <a class="open-btn" href="{{ url_for('w') }}">Open</a>
+            </div>
+            <div class="folder">
+                <img src="{{ url_for('static', filename='Letters/X.png') }}" alt="X">
+                <a class="open-btn" href="{{ url_for('x') }}">Open</a>
+            </div>
+            <div class="folder">
+                <img src="{{ url_for('static', filename='Letters/Y.png') }}" alt="Y">
+                <a class="open-btn" href="{{ url_for('y') }}">Open</a>
+            </div>
+            <div class="folder">
+                <img src="{{ url_for('static', filename='Letters/Z.png') }}" alt="Z">
+                <a class="open-btn" href="{{ url_for('z') }}">Open</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='cssLearn/script.js') }}"></script>
+</body>
+</html>
