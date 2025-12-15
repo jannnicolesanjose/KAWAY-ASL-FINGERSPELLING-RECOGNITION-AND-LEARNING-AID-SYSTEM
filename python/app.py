@@ -9,7 +9,7 @@ from collections import deque
 app = Flask(__name__)
 
 # Load the model
-model_dict = pickle.load(open('Modelling/model.p', 'rb'))
+model_dict = pickle.load(open('../model/model.p', 'rb'))
 model = model_dict['model']
 
 cap = None
@@ -190,7 +190,7 @@ def video_feed():
 # Route to render the main page
 @app.route('/')
 def home():
-    return render_template('KAWAY.html')  # This renders the index.html from the templates folder
+    return render_template('home.html')  # This renders the index.html from the templates folder
 
 @app.route('/Learn and About Us')
 def learn_and_about_us():
