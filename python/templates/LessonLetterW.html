@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAWAY: An American Sign Language (ASL) Recognition and Learning Aid System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='cssModules/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='logoimages/icon.png') }}" type="image/png">
+</head>
+<body>
+    <div class="back-button" onclick="history.back()">
+        <div class="circle">
+            <img src="{{ url_for('static', filename='logoimages/backbutton.png') }}" alt="Back Arrow">
+        </div>
+        <b class="back">Back</b>
+    </div>
+    
+    <div class="title-container">
+        <h2 class="lesson">Lesson: Letter W</h2>
+    </div>
+
+    <div class="gif-container">
+        <img src="{{ url_for('static', filename='ASLgif/GuideW.gif') }}" alt="GIF of Letter W">
+    </div>
+
+    <div class="letter-img">
+        <img src="{{ url_for('static', filename='handsigns/W1.jpeg') }}" alt="Hand Sign W1">
+        <img src="{{ url_for('static', filename='handsigns/W2.jpeg') }}" alt="Hand Sign W2">
+        <img src="{{ url_for('static', filename='handsigns/W3.jpeg') }}" alt="Hand Sign W3">
+        <img src="{{ url_for('static', filename='handsigns/W4.jpeg') }}" alt="Hand Sign W4">
+        <img src="{{ url_for('static', filename='handsigns/W5.jpeg') }}" alt="Hand Sign W5">
+    </div>
+
+    <div class="handsign-guide">
+        <div class="description" id="guide">
+            <h3>Directions for Signing the Letter W</h3>
+            <p>Hold your dominant hand, palm facing outward, with index,
+                middle, and ring fingers standing upright and spread apart
+                while pinky and thumb touch, with the pinky finger curving in
+                and the thumb resting on the pinky's finger nail, just like the letter "W".
+            </p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='cssModules/script.js') }}"></script>
+</body>
+</html>

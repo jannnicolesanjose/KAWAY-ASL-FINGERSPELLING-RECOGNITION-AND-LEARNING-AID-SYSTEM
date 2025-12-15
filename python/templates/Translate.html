@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAWAY: An American Sign Language (ASL) Recognition and Learning Aid System</title>
+
+    <!-- Link to CSS stored in the static folder -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='cssTranslate/style.css') }}">
+
+    <!-- Link to icon stored in the static folder -->
+    <link rel="icon" href="{{ url_for('static', filename='logoimages/icon.png') }}" type="image/png">
+</head>
+
+<body> 
+    <div class="back-button" onclick="history.back()">
+        <div class="circle">
+            <!-- Image source updated to be served from the static folder -->
+            <img src="{{ url_for('static', filename='logoimages/backbutton.png') }}" alt="Back Arrow">
+        </div>
+        <b class="back">Back</b>
+    </div>
+
+    <div class="container">
+        <!-- ASL to Text Section -->
+        <div class="section asltotext-section">
+            <b class="mabuhay">Mabuhay!</b>
+            <!-- Image source updated to be served from the static folder -->
+            <img class="icon" id="ASLtoTextBtn" alt="ASLtoText" src="{{ url_for('static', filename='logoimages/ASLtoText.png') }}">
+            <a class="asltotext-btn" href="{{ url_for('translate_asl_to_text') }}">ASL to Text</a>
+        </div>
+
+        <!-- Text to ASL Section -->
+        <div class="section texttoasl-section">
+            <b class="mabuhay">Mabuhay!</b>
+            <!-- Image source updated to be served from the static folder -->
+            <img class="icon" id="TexttoASLBtn" alt="TexttoASL" src="{{ url_for('static', filename='logoimages/TexttoASL.png') }}">
+            <a class="texttoasl-btn" href="{{ url_for('translate_text_to_asl') }}">Text to ASL</a>
+        </div>   
+    </div>     
+
+    <!-- Link to JavaScript stored in the static folder -->
+    <script src="{{ url_for('static', filename='cssTranslate/script.js') }}"></script>
+
+</body>
+</html>

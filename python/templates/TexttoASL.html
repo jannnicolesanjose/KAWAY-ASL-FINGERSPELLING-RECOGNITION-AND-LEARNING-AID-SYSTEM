@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAWAY: An American Sign Language (ASL) Recognition and Learning Aid System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='cssTexttoASL/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='logoimages/icon.png') }}" type="image/png">
+</head>
+
+<body> 
+    <div class="back-button" onclick="history.back()">
+        <div class="circle">
+            <img src="{{ url_for('static', filename='logoimages/backbutton.png') }}" alt="Back Arrow">
+        </div>
+        <b class="back">Back</b>
+    </div>
+
+    <div id="video-output">
+        <h1>Text to ASL</h1>
+        <div id="letter-container">
+            <div id="letter-image"></div>
+        </div>
+        <div id="input-container">
+            <input type="text" id="letter-input" placeholder="Enter a letter">
+            <div id="button-container">
+                <button id="enter-button">Enter</button>
+                <button id="clear-button">Clear</button>
+            </div>
+        </div>        
+    </div>
+    
+    <script src="{{ url_for('static', filename='cssTexttoASL/script.js') }}"></script>
+</body>
+</html>
